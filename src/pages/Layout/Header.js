@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-function Header({ isMenu=false, setIsMenu=()=>{} }) {
+function Header({ isMenu = false, setIsMenu = () => {} }) {
 	const { t } = useTranslation();
 	return (
 		<div className="sticky top-0 z-50">
@@ -9,19 +9,35 @@ function Header({ isMenu=false, setIsMenu=()=>{} }) {
 				<div className="bg-white pl-5 pr-5 py-3 md:pr-8 border-b border-slate-200 flex flex-1 items-center justify-between w-full">
 					<div className="flex justify-start space-x-2">
 						<button
-							data-testid="new-project-button"
-							aria-label="New Project"
+							data-testid="upgrade-button"
+							aria-label="Upgrade to Pro"
 							tabIndex="0"
-							className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 font-semibold focus:ring-teal-500 bg-teal-700 text-teal-100 hover:bg-teal-800 ring-offset-2 focus:ring-2"
+							className="focus:outline-none flex select-none items-center py-3 text-xs font-medium ring-offset-2 focus:ring-2 text-white justify-center rounded-lg bg-purple-500 hover:bg-purple-700 w-full px-5"
 						>
-							<h3
-								className="flex-nowrap whitespace-nowrap text-h3 font-semibold tracking-wide text-left"
-								aria-label="New Project"
-							>
-								{t("newProject")}
-							</h3>
+							<span className="flex-nowrap whitespace-nowrap mr-2">
+								{t("upgrade")}
+							</span>
+							<img src="./assets/imgs/check.svg" />
 						</button>
 					</div>
+					<button
+						className="focus:outline-none h-full w-full cursor-pointer items-center text-left focus:ring-0 hidden md:flex"
+						type="button"
+					>
+						<div className="flex flex-col text-right pl-2">
+							<span className="text-sm font-bold text-blue-900 line-clamp-1">
+								{t("personalWorkspace")}
+							</span>
+							<span className="text-xs font-light text-slate-600 line-clamp-1">
+								{t("freePlan")}
+							</span>
+						</div>
+						<img
+							src="https://ui-avatars.com/api/?name=Personal+Workspace&amp;color=5E7682&amp;background=F8FBFC&amp;size=100"
+							alt="avatar"
+							className="rounded-full border border-teal-800 shadow ml-2 h-8 w-8"
+						/>
+					</button>
 					<div className="flex items-center justify-end w-full p-1">
 						<div className="flex text-xl line-clamp-1">
 							<div>
@@ -29,7 +45,7 @@ function Header({ isMenu=false, setIsMenu=()=>{} }) {
 									className="flex flex-1 outline-none max-w-fit rounded-md border-none focus:ring-0 !p-0 !m-0 text-h1 cursor-pointer p-2 line-clamp-1"
 									data-testid="project-title-field"
 								>
-									{t('projects')} 2023-09-20
+									{t("projects")} 2023-09-20
 								</span>
 								<input
 									aria-label="Project name"

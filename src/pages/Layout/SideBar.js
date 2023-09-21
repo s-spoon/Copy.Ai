@@ -26,7 +26,9 @@ function SideBar() {
 		{
 			name: t("myProjects"),
 			to: "/projects",
-			icon: <DocIcon className="text-slate-600 group-hover:text-slate-700 !h-4 !w-4 !mr-3" />,
+			icon: (
+				<DocIcon className="text-slate-600 group-hover:text-slate-700 !h-4 !w-4 !mr-3" />
+			),
 		},
 		{
 			name: t("infoBase"),
@@ -127,42 +129,18 @@ function SideBar() {
 						</div>
 						<div className="hidden pr-6 md:block">
 							<button
-								data-testid="upgrade-button"
-								aria-label="Upgrade to Pro"
+								data-testid="new-project-button"
+								aria-label="New Project"
 								tabIndex="0"
-								className="focus:outline-none flex select-none items-center py-3 text-xs font-medium ring-offset-2 focus:ring-2 text-white justify-center rounded-lg bg-purple-500 hover:bg-purple-700 w-full px-5"
+								className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 my-10 font-semibold focus:ring-teal-500 bg-teal-700 text-teal-100 hover:bg-teal-800 ring-offset-2 focus:ring-2 w-full text-center"
 							>
-								<span className="flex-nowrap whitespace-nowrap mr-2">
-									{t("upgrade")}
-								</span>
-								<img src="./assets/imgs/check.svg" />
-							</button>
-							<div
-								tabIndex="0"
-								className="z-30 flex h-20 cursor-pointer items-center justify-between py-10 relative"
-							>
-								<button
-									className="focus:outline-none flex h-full w-full cursor-pointer items-center text-left focus:ring-0"
-									id="headlessui-menu-button-8"
-									type="button"
-									aria-haspopup="true"
-									aria-expanded="false"
+								<h3
+									className="flex-nowrap whitespace-nowrap text-h3 font-semibold tracking-wide text-left mx-auto"
+									aria-label="New Project"
 								>
-									<div className="flex flex-grow flex-col text-right">
-										<span className="text-sm font-bold text-blue-900 line-clamp-1">
-											{t("personalWorkspace")}
-										</span>
-										<span className="text-xs font-light text-slate-600 line-clamp-1">
-											{t("freePlan")}
-										</span>
-									</div>
-									<img
-										src="https://ui-avatars.com/api/?name=Personal+Workspace&amp;color=5E7682&amp;background=F8FBFC&amp;size=100"
-										alt="avatar"
-										className="rounded-full border border-teal-800 shadow ml-2 h-8 w-8"
-									/>
-								</button>
-							</div>
+									{t("newProject")}
+								</h3>
+							</button>
 						</div>
 					</div>
 				</div>
