@@ -101,6 +101,19 @@ function SideBar() {
 									</div>
 									<div className="border-b border-purple-100 h-0 w-full"></div>
 								</div>
+								<button
+									data-testid="new-project-button"
+									aria-label="New Project"
+									tabIndex="0"
+									className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 my-10 font-semibold focus:ring-teal-500 bg-teal-700 text-teal-100 hover:bg-teal-800 ring-offset-2 focus:ring-2 w-full text-center"
+								>
+									<h3
+										className="flex-nowrap whitespace-nowrap text-h3 font-semibold tracking-wide text-left mx-auto"
+										aria-label="New Project"
+									>
+										{t("newProject")}
+									</h3>
+								</button>
 								<div className="mt-4 pr-3">
 									<div className="absolute right-0 h-10 w-1.5 rounded-l-lg bg-teal-800"></div>
 									{menus.map((item, index) => {
@@ -127,21 +140,7 @@ function SideBar() {
 								</div>
 							</div>
 						</div>
-						<div className="hidden pr-6 md:block">
-							<button
-								data-testid="new-project-button"
-								aria-label="New Project"
-								tabIndex="0"
-								className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 my-10 font-semibold focus:ring-teal-500 bg-teal-700 text-teal-100 hover:bg-teal-800 ring-offset-2 focus:ring-2 w-full text-center"
-							>
-								<h3
-									className="flex-nowrap whitespace-nowrap text-h3 font-semibold tracking-wide text-left mx-auto"
-									aria-label="New Project"
-								>
-									{t("newProject")}
-								</h3>
-							</button>
-						</div>
+						<div className="hidden pr-6 md:block"></div>
 					</div>
 				</div>
 			</div>
