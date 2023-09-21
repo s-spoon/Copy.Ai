@@ -16,7 +16,7 @@ function FolderCard() {
 							required=""
 							data-testid="project-folder-name"
 							data-hj-allow="true"
-							value="Project Name"
+							value={t('projectName')}
 							dir="rtl"
 						/>
 					</div>

@@ -29,7 +29,7 @@ function Header({ isMenu=false, setIsMenu=()=>{} }) {
 									className="flex flex-1 outline-none max-w-fit rounded-md border-none focus:ring-0 !p-0 !m-0 text-h1 cursor-pointer p-2 line-clamp-1"
 									data-testid="project-title-field"
 								>
-									2023-09-20 Untitled
+									{t('projects')} 2023-09-20
 								</span>
 								<input
 									aria-label="Project name"

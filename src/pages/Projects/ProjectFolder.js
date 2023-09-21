@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 function ProjectFolder() {
 	const { t } = useTranslation();
 	const [isOpen, setIsOpen] = useState(false);
-	const [sortBy, setSortBy] = useState("Last Modified");
+	const [sortBy, setSortBy] = useState(t('lastModified'));
 	const filters = [t('dateCreated'), t('lastModified'), t('alphabetical')];
 	return (
 		<>

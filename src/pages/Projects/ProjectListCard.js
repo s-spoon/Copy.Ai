@@ -53,7 +53,7 @@ function ProjectListCard() {
 						className="flex flex-1 outline-none max-w-full rounded-md border-none text-md cursor-pointer focus:ring-0 p-2 line-clamp-1"
 						data-testid="project-title-field"
 					>
-						{t('Project')}2023-09-21
+						{t('project')}2023-09-21
 					</span>
 					<input
 						aria-label="Project name"
