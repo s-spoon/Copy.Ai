@@ -30,7 +30,17 @@ const resources = {
       generateCaptions: "Generate 10 Instagram captions for fashion week",
       productDescription: "Write a product description for a bicycle in the style of Hemingway",
       askOrSearch: "Ask or search anything",
-      improve: "Improve"
+      improve: "Improve",
+      // ------------------------Project------------------------
+      dateCreated: "Date Created",
+      lastModified: "Last Modified",
+      alphabetical: "Alphabetical",
+      projects: "Projects",
+      folder: "Folder",
+      projectName: "Project Name",
+      today: "Today",
+      private: "Private",
+      project: "Project"
     }
   },
   ar: {
@@ -61,7 +71,17 @@ const resources = {
         generateCaptions: "قم بإنشاء 10 تعليقات توضيحية على Instagram لأسبوع الموضة",
         productDescription: "اكتب وصفًا للمنتج للدراجة بأسلوب هيمينغواي",
         askOrSearch: "اسأل أو ابحث عن أي شيء",
-        improve: "يحسن"
+        improve: "يحسن",
+        // ------------------------Projects------------------------
+        dateCreated: "تاريخ الإنشاء",
+        lastModified: "آخر تعديل",
+        alphabetical: "أبجدي",
+        projects: "المشاريع",
+        folder: "مجلد",
+        projectName: "اسم المشروع",
+        today: "اليوم",
+        private: "خاص",
+        project: "مشروع"
     }
   }
 };
@@ -70,7 +90,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "en",
+    lng: "ar",
     keySeparator: false,
     interpolation: {
       escapeValue: false
