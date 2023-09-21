@@ -14,7 +14,7 @@ function App() {
 					<Route
 						exact
 						path="/"
-						element={<Layout />}
+						element={<Chat />}
 					/>
 					<Route
 						exact
