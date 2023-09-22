@@ -48,7 +48,7 @@ function ChatInput() {
 								aria-label="Ask"
 								disabled=""
 								tabIndex="0"
-								className="group focus:outline-none select-none flex items-center text-xs font-semibold focus:ring-teal-500 hover:bg-teal-800 pointer-events-none bg-slate-200 border-slate-300 text-slate-700 p-2 rounded-full ring-offset-2 focus:ring-2"
+								className="group focus:outline-none select-none flex items-center text-xs font-semibold focus:ring-purple-500 hover:bg-purple-800 pointer-events-none bg-slate-200 border-slate-300 text-slate-700 p-2 rounded-full ring-offset-2 focus:ring-2"
 							>
 								<SendIcon className="h-3 w-3 text-white transform scale-x-[-1]" />
 							</button>
@@ -60,7 +60,7 @@ function ChatInput() {
 										aria-label="Improve"
 										disabled=""
 										tabIndex="0"
-										className="group focus:outline-none flex select-none items-center text-xs font-semibold border-0 focus:ring-teal-500 hover:bg-slate-200 hover:text-slate-900 pointer-events-none bg-transparent opacity-50 text-slate-700 rounded-full md:rounded-lg p-2 md:px-3 md:py-2 focus:shadow-none"
+										className="group focus:outline-none flex select-none items-center text-xs font-semibold border-0 focus:ring-purple-500 hover:bg-slate-200 hover:text-slate-900 pointer-events-none bg-transparent opacity-50 text-slate-700 rounded-full md:rounded-lg p-2 md:px-3 md:py-2 focus:shadow-none"
 									>
 										<EffectIcon />
 										<h3
@@ -77,7 +77,7 @@ function ChatInput() {
 									data-testid="open-prompt-library"
 									aria-label="Browse Prompts"
 									tabIndex="0"
-									className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 font-semibold border-0 focus:ring-teal-500 text-slate-800 hover:bg-slate-200 hover:text-slate-900 focus:shadow-none"
+									className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 font-semibold border-0 focus:ring-purple-500 text-slate-800 hover:bg-slate-200 hover:text-slate-900 focus:shadow-none"
 								>
 									<h3
 										className="flex-nowrap whitespace-nowrap mr-2 text-h3 font-semibold tracking-wide text-left"
@@ -93,7 +93,7 @@ function ChatInput() {
 								>
 									<button
 										data-testid="brand-voice-selector"
-										className="focus:outline-none flex select-none items-center text-h3 rounded-lg px-3 py-2 font-semibold border-0 focus:ring-teal-500 text-slate-800 hover:bg-slate-200 hover:text-slate-900 focus:shadow-none truncate"
+										className="focus:outline-none flex select-none items-center text-h3 rounded-lg px-3 py-2 font-semibold border-0 focus:ring-purple-500 text-slate-800 hover:bg-slate-200 hover:text-slate-900 focus:shadow-none truncate"
 										id="headlessui-menu-button-41"
 										type="button"
 										aria-haspopup="true"

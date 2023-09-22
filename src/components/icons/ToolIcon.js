@@ -1,7 +1,7 @@
 function ToolIcon() {
 	return (
 		<svg
-			className="!text-slate-600 mr-3 text-teal-800"
+			className="!text-slate-600 mr-3 text-purple-800"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
 			viewBox="0 0 16 16"

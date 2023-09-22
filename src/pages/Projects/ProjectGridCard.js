@@ -10,7 +10,7 @@ function ProjectGridCard() {
 		<div className="group flex flex-1 flex-col rounded-xl border shadow-sm transition-top duration-200 hover:-top-1 border-purple-100 bg-white">
 			<div className="flex flex-1 cursor-pointer h-24 min-h-full items-center">
 				<div className="grow-0 p-4 pt-3 h-24 items-top">
-					<div className="flex p-2 cursor-pointer items-center justify-center text-slate-300 hover:text-green-600">
+					<div className="flex p-2 cursor-pointer items-center justify-center text-slate-300 hover:text-purple-600">
 						<svg
 							width="16"
 							height="16"

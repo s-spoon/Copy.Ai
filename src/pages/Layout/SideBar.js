@@ -7,6 +7,7 @@ import DbIcon from "../../components/icons/DbIcon";
 import DocIcon from "../../components/icons/DocIcon";
 import TemplateIcon from "../../components/icons/TemplateIcon";
 import ToolIcon from "../../components/icons/ToolIcon";
+import { BuildRounded, ChatRounded, Description, GraphicEqRounded, StorageRounded, TitleRounded } from "@material-ui/icons";
 
 function SideBar() {
 	const { t } = useTranslation();
@@ -21,29 +22,34 @@ function SideBar() {
 		{
 			name: t("chat"),
 			to: "/chat",
-			icon: <ChatIcon />,
+			icon: <ChatRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
 		},
 		{
 			name: t("myProjects"),
 			to: "/projects",
 			icon: (
-				<DocIcon className="text-slate-600 group-hover:text-slate-700 !h-4 !w-4 !mr-3" />
+				<Description className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />
 			),
 		},
 		{
 			name: t("infoBase"),
 			to: "/infobase",
-			icon: <DbIcon />,
+			icon: <StorageRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
+		},
+		{
+			name: t("brandVoice"),
+			to: "/brand-voice",
+			icon: <GraphicEqRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
 		},
 		{
 			name: t("templates"),
 			to: "/templates",
-			icon: <TemplateIcon />,
+			icon: <TitleRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
 		},
 		{
 			name: t("tools"),
 			to: "/tools",
-			icon: <ToolIcon />,
+			icon: <BuildRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
 		},
 	];
 
@@ -55,7 +61,7 @@ function SideBar() {
 		<div
 			id="sidebar"
 			data-testid="sidebar"
-			className="fixed flex md:top-0 z-50 opacity-100 w-full transition-all md:sticky md:h-screen md:w-auto md:min-w-min mt-16 md:mt-0 justify-end"
+			className="fixed flex md:top-0 z-100 opacity-100 w-full transition-all md:sticky md:h-screen md:w-auto md:min-w-min mt-16 md:mt-0 justify-end"
 		>
 			<div
 				id="desktop"
@@ -95,7 +101,7 @@ function SideBar() {
 											<img
 												src="https://ui-avatars.com/api/?name=Personal+Workspace&amp;color=5E7682&amp;background=F8FBFC&amp;size=100"
 												alt="avatar"
-												className="rounded-full border border-teal-800 shadow ml-2 h-8 w-8"
+												className="rounded-full border border-purple-800 shadow ml-2 h-8 w-8"
 											/>
 										</button>
 									</div>
@@ -105,7 +111,7 @@ function SideBar() {
 									data-testid="new-project-button"
 									aria-label="New Project"
 									tabIndex="0"
-									className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 my-10 font-semibold focus:ring-teal-500 bg-teal-700 text-teal-100 hover:bg-teal-800 ring-offset-2 focus:ring-2 w-full text-center"
+									className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 my-10 font-semibold focus:ring-purple-500 bg-purple-700 text-purple-100 hover:bg-purple-800 ring-offset-2 focus:ring-2 w-full text-center"
 								>
 									<h3
 										className="flex-nowrap whitespace-nowrap text-h3 font-semibold tracking-wide text-left mx-auto"
@@ -115,7 +121,7 @@ function SideBar() {
 									</h3>
 								</button>
 								<div className="mt-4 pr-3">
-									<div className="absolute right-0 h-10 w-1.5 rounded-l-lg bg-teal-800"></div>
+									<div className="absolute right-0 h-10 w-1.5 rounded-l-lg bg-purple-800"></div>
 									{menus.map((item, index) => {
 										return (
 											<div key={index}>
@@ -124,7 +130,7 @@ function SideBar() {
 														handleMenu(item?.to)
 													}
 													className="group focus:outline-none flex justify-end select-none items-center 
-													rounded-lg px-3 font-semibold border-0 focus:ring-teal-500 text-slate-800 hover:text-slate-900 text-md w-full py-3 hover:bg-teal-100 md:text-sm focus:shadow-none text-right"
+													rounded-lg px-3 font-semibold border-0 focus:ring-purple-500 text-slate-800 hover:text-slate-900 text-md w-full py-3 hover:bg-purple-100 md:text-sm focus:shadow-none text-right"
 												>
 													<h3
 														className="flex-nowrap whitespace-nowrap mr-2 text-h3 font-semibold tracking-wide"

@@ -5,6 +5,8 @@ import { Provider } from "react-redux";
 import Layout from "./pages/Layout";
 import store from "./store";
 import Projects from "./pages/Projects";
+import Infobase from "./pages/Infobase";
+import BrandVoice from "./pages/BrandVoice";
 
 function App() {
 	return (
@@ -27,9 +29,19 @@ function App() {
 						element={<Projects />}
 					/>
 					<Route
-                        path="*"
-                        element={<p>Page Will Be Soon</p>} 
-                    />
+						exact
+						path="/infobase"
+						element={<Infobase />}
+					/>
+					<Route
+						exact
+						path="/brand-voice"
+						element={<BrandVoice />}
+					/>
+					<Route
+						path="*"
+						element={<p>Page Will Be Soon</p>}
+					/>
 				</Routes>
 			</BrowserRouter>
 		</Provider>

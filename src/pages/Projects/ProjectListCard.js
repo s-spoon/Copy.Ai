@@ -67,7 +67,7 @@ function ProjectListCard() {
 						dir="rtl"
 					/>
 				</div>
-				<div className="flex w-4 cursor-pointer items-center justify-center text-slate-300 hover:text-teal-600 ">
+				<div className="flex w-4 cursor-pointer items-center justify-center text-slate-300 hover:text-purple-600 ">
 					<svg
 						width="16"
 						height="16"

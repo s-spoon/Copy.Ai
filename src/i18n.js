@@ -40,7 +40,24 @@ const resources = {
       projectName: "Project Name",
       today: "Today",
       private: "Private",
-      project: "Project"
+      project: "Project",
+      // ------------------------Infobase------------------------
+      infobaseDes: "Infobase allows you to save and re-use key information.",
+      name: "Name",
+      info: "Info",
+      findInfo: "Find Info",
+      addInfo: "Add Info",
+      learnMore: "Learn More",
+      shareWorkspace: "Shared across your workspace",
+      infoName: "Info Name",
+      uploadDoc: "UPLOAD DOCUMENT",
+      maxFileSize: "Max File Size",
+      acceptedFile: "Accepted files",
+      enterText: "ENTER TEXT",
+      textDes: "Enter data here that will inform your Chat or Workflow prompts.",
+      or: "OR",
+      save: "Save",
+      saveDes: `Please click on the "Save" button to save to Infobase. The processing will run in the background and may take a few minutes to complete.`,
     }
   },
   ar: {
@@ -81,7 +98,24 @@ const resources = {
         projectName: "اسم المشروع",
         today: "اليوم",
         private: "خاص",
-        project: "مشروع"
+        project: "مشروع",
+        // ------------------------Infobase------------------------
+        infobaseDes: "تسمح لك Infobase بحفظ وإعادة استخدام المعلومات الرئيسية",
+        name: "اسم",
+        info: "معلومات",
+        findInfo: "البحث عن المعلومات",
+        addInfo: "أضف معلومات",
+        learnMore: "أعرف أكثر",
+        shareWorkspace: "مشترك عبر مساحة العمل الخاصة بك",
+        infoName: "اسم المعلومات",
+        uploadDoc: "تحميل مستند",
+        maxFileSize: "الحجم الأقصى للملف",
+        acceptedFile: "الملفات المقبولة",
+        enterText: "أدخل النص",
+        textDes: "أدخل البيانات هنا التي ستعطي معلومات على مشروع الدردشة أو العمل.",
+        or: "أو",
+        save: "حفظ",
+        saveDes: `يرجى الضغط على زر "حفظ" للاحتفاظ بالمعلومات. سيتم تشغيل العملية في الخلفية وقد تستغرق بضع دقائق للإكتمال.`,
     }
   }
 };
@@ -98,3 +132,4 @@ i18n
   });
 
 export default i18n;
+// #92309C

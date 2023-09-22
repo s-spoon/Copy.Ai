@@ -6,7 +6,7 @@ function ChatIcon() {
 			viewBox="0 0 16 16"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
-			className="text-slate-600 group-hover:text-slate-700 !h-4 !w-4 !mr-3 !text-teal-700"
+			className="text-slate-600 group-hover:text-slate-700 !h-4 !w-4 !mr-3 !text-purple-700"
 		>
 			<g clipPath="url(#clip0_5_318)">
 				<path
