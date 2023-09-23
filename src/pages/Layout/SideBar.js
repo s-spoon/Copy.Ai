@@ -1,13 +1,7 @@
-import { Button } from "@material-ui/core";
+import { BuildRounded, ChatRounded, Description, GraphicEqRounded, StorageRounded, TitleRounded } from "@material-ui/icons";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import ChatIcon from "../../components/icons/ChatIcon";
-import DbIcon from "../../components/icons/DbIcon";
-import DocIcon from "../../components/icons/DocIcon";
-import TemplateIcon from "../../components/icons/TemplateIcon";
-import ToolIcon from "../../components/icons/ToolIcon";
-import { BuildRounded, ChatRounded, Description, GraphicEqRounded, StorageRounded, TitleRounded } from "@material-ui/icons";
 
 function SideBar() {
 	const { t } = useTranslation();

@@ -58,6 +58,26 @@ const resources = {
       or: "OR",
       save: "Save",
       saveDes: `Please click on the "Save" button to save to Infobase. The processing will run in the background and may take a few minutes to complete.`,
+      // ------------------------BrandVoice------------------------
+      brandVoiceDes: "Create different Brand Voices to use in various instances - ensuring consistency of your AI-generated content.",
+      newBrandVoice: "New Brand Voice",
+      actions: "Actions",
+      goBack: "goBack",
+      addBrandVoice: "Add Brand Voice",
+      addBrandVoiceDes: "Write or paste content that reflects your brand voice. For best results, we recommend between 50-500 words",
+      contentAnalize: "Content to Analize",
+      analizeContentDes: "Add a blog article, social media posts, company mission, website copy, marketing emails, or any content that matches your desired brand voice",
+      words: "words",
+      analyzeBrandVoice: "Analyze Brand Voice",
+      nameBrandVoice: "Name of the Brand Voice",
+      required: "Required",
+      marketing: "Marketing",
+      tipBrandVoice: "Tips For Editing Brand Voice",
+      tip1: "When editing, make sure not to use negative commands. (Ex: Use 'Be courteous.', instead of 'Don't be rude.')",
+      tip2: "For best results, you can redo the analysis instead of editing",
+      saveAsDefaultVoice: "Save as the default voice across your workspace",
+      redoAnalysis: "Redo Analysis",
+      saveBrandVoice: "Save Brand Voice"
     }
   },
   ar: {
@@ -116,6 +136,26 @@ const resources = {
         or: "أو",
         save: "حفظ",
         saveDes: `يرجى الضغط على زر "حفظ" للاحتفاظ بالمعلومات. سيتم تشغيل العملية في الخلفية وقد تستغرق بضع دقائق للإكتمال.`,
+        // ------------------------BrandVoice------------------------
+          brandVoiceDes: "أنشئ أصوات العلامة التجارية المختلفة لاستخدامها في مختلف الحالات - لضمان تحقيق الاتساق في محتوى الذكاء الاصطناعي الذي تم إنشاؤه.",
+          newBrandVoice: "صوت العلامة التجارية الجديدة",
+          actions: "أفعال",
+          goBack: "العودة",
+          addBrandVoice: "إضافة صوت العلامة التجارية",
+          addBrandVoiceDes: "اكتب أو الصق المحتوى الذي يعكس صوت علامتك التجارية. للحصول على أفضل النتائج ، نوصي بين 50-500 كلمة",
+          contentAnalize: "المحتوى للتحليل",
+          analizeContentDes: "أضف مقالة مدونة ، منشورات وسائل التواصل الاجتماعي ، مهمة الشركة ، نسخة الموقع ، رسائل التسويق أو أي محتوى يتوافق مع صوت العلامة التجارية المطلوب",
+          words: "كلمات",
+          analyzeBrandVoice: "تحليل صوت العلامة التجارية",
+          nameBrandVoice: "اسم صوت العلامة التجارية",
+          required: "مطلوب",
+          marketing: "التسويق",
+          tipBrandVoice: "نصائح لتحرير صوت العلامة التجارية",
+          tip1: "عند التحرير ، تأكد من عدم استخدام الأوامر السلبية. (مثلاً: استخدم 'كن مهذباً.' بدلاً من 'لا تكن وقحاً.')",
+          tip2: "للحصول على أفضل النتائج ، يمكنك إعادة القيام بالتحليل بدلاً من التحرير",
+          saveAsDefaultVoice: "احفظ كصوت افتراضي في جميع أنحاء مساحة العمل الخاصة بك",
+          redoAnalysis: "إعادة التحليل",
+          saveBrandVoice: "احفظ صوت العلامة التجارية"
     }
   }
 };

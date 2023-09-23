@@ -1,54 +1,57 @@
-import { ArrowBackRounded, ArrowForwardRounded, KeyboardBackspace } from "@material-ui/icons";
+import {
+	ArrowBackRounded,
+	ArrowForwardRounded
+} from "@material-ui/icons";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
-function BrandVoiceEdit({ setIsEdit = () => {} }) {
+function BrandVoiceEdit({ setIsEdit = () => {}, setIsAnalyze = () => {} }) {
+	const { t } = useTranslation();
 	return (
 		<div className="min-h-screen px-6 py-10 flex flex-col items-start">
 			<button
-				className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 font-semibold border-0 focus:ring-purple-500 text-grey-800 hover:bg-grey-200 hover:text-grey-900 mb-4 focus:shadow-none"
+				onClick={() => {
+					setIsEdit(false);
+					setIsAnalyze(false);
+				}}
+				className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 font-semibold border-0 focus:ring-purple-500 text-slate-800 hover:bg-slate-200 hover:text-slate-900 mb-4 focus:shadow-none ml-auto"
 			>
 				<ArrowBackRounded />
 				<h3
 					className="flex-nowrap whitespace-nowrap ml-2 text-h3 font-semibold tracking-wide text-left"
 					aria-label="Go Back"
 				>
-					Go Back
+					{t('goBack')}
 				</h3>
 			</button>
 			<div className="w-full justify-between mb-2 font-bold text-2xl">
-				<div>Add Brand Voice</div>
-				<div className="text-base text-gray-600 font-normal mt-2">
-					Write or paste content that reflects your brand voice. For
-					best results, we recommend between 50-500 words.
+				<div className="text-right">{t('addBrandVoice')}</div>
+				<div className="text-base text-gray-600 font-normal mt-2 text-right">
+				{t('addBrandVoiceDes')}
 				</div>
 			</div>
 			<div className="w-full flex mt-6">
 				<div className="flex flex-col w-full">
-					<div className="w-full mb-2 text-xs text-grey-500 uppercase">
-						Content to analyze
+					<div className="w-full mb-2 text-xs text-slate-500 uppercase text-right">
+					{t('contentAnalize')}
 					</div>
 					<textarea
 						rows="10"
-						className="w-full text-black border-purple-100 focus:outline-none resize-none rounded bg-gray-50 placeholder-grey-500 shadow-sm transition-all duration-300 h-full focus:w-full focus:border-green-700 focus:ring-0"
-						placeholder="Add a blog article, social media posts, company mission, website copy, marketing emails, or any content that matches your desired brand voice."
+						dir="rtl"
+						className="w-full text-black border-purple-100 focus:outline-none resize-none rounded bg-gray-50 placeholder-slate-500 shadow-sm transition-all duration-300 h-full focus:w-full focus:border-purple-700 focus:ring-0"
+						placeholder={t('analizeContentDes')}
 					></textarea>
-					<div className="flex justify-end w-full text-grey-500 text-sm mt-1 pr-1">
-						0 words
+					<div className="flex justify-start w-full text-slate-500 text-sm mt-1 pr-1">
+						{t('words')} 0
 					</div>
 					<button
-						data-testid="brand-voice-generate-button"
-						aria-label="Analyze Brand Voice"
-						disabled=""
-						tabindex="0"
-						className="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 font-semibold focus:ring-green-500 hover:bg-green-800 pointer-events-none bg-grey-200 border-grey-300 text-grey-700 mt-4 max-w-min ring-offset-2 focus:ring-2"
+						onClick={() => setIsAnalyze(true)}
+						className="focus:outline-none flex items-center text-xs rounded-lg px-3 py-2 font-semibold focus:ring-purple-500 hover:bg-purple-800 hover:text-slate-300 bg-slate-200 border-slate-300 text-slate-700 mt-4 max-w-min ring-offset-2 focus:ring-2 ml-auto"
 					>
-						<h3
-							className="flex-nowrap whitespace-nowrap mr-2 text-h3 font-semibold tracking-wide text-left"
-							aria-label="Analyze Brand Voice"
-						>
-							Analyze Brand Voice
+						<h3 className="flex-nowrap whitespace-nowrap mr-2 text-h3 font-semibold tracking-wide text-right">
+							{t(`analyzeBrandVoice`)}
 						</h3>
-						<ArrowForwardRounded className="h-3 w-3 text-green-500 text-grey-500" />
+						<ArrowForwardRounded className="h-3 w-3  text-slate-500" />
 					</button>
 				</div>
 			</div>
