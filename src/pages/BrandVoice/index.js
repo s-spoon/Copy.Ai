@@ -16,10 +16,10 @@ function BrandVoice() {
 				<div className="flex w-full flex-1 flex-col items-center max-w-screen-xl">
 					<div className="min-h-72 w-full px-6 py-10">
 						<div className="mb-2 text-2xl font-bold text-right">
-							{t('brandVoice')}
+							{t("brandVoice")}
 						</div>
 						<div className="text-grey-600 text-right">
-						{t('brandVoiceDes')}
+							{t("brandVoiceDes")}
 						</div>
 						<button
 							onClick={() => setIsEdit(true)}
@@ -30,24 +30,24 @@ function BrandVoice() {
 								className="flex-nowrap whitespace-nowrap ml-2 text-h3 font-semibold tracking-wide text-left"
 								aria-label="New Brand Voice"
 							>
-								{t('newBrandVoice')}
+								{t("newBrandVoice")}
 							</h3>
 						</button>
 						<div className="rounded-lg border border-grey-100">
 							<div className="flex border-b border-grey-100 bg-grey-100">
-							<div className="w-20 p-4 text-xs text-grey-400">
-							{t('actions')}
+								<div className="w-20 p-4 text-xs text-grey-400">
+									{t("actions")}
 								</div>
 								<div className="w-3/5 p-4 text-xs text-grey-400 text-right">
-								{t('brandVoice')}
+									{t("brandVoice")}
 								</div>
 								<div className="w-2/5 border-r border-grey-100 p-4 text-xs text-grey-400 text-right">
-								{t('name')}
+									{t("name")}
 								</div>
 							</div>
 							<div>
 								<div className="flex cursor-pointer border-b border-grey-100">
-								<div className="w-20 p-3">
+									<div className="w-20 p-3">
 										<div
 											className="relative flex"
 											aria-disabled="false"
@@ -86,16 +86,24 @@ function BrandVoice() {
 										style={{ whiteSpace: "break-spaces" }}
 										className="w-3/5 truncate p-3"
 									>
-										I'm sorry, but the text provided doesn't
-										seem to be valid or sufficient to
-										identify a brand's voice, tone,
-										audience, and style. Could you please
-										provide a more substantial or meaningful
-										sample?
+										فني ، دقيق ، موثوق ، ومتعاطف. صوت مطور
+										الويب المحترف هو الذي يوازن بين المعرفة
+										الخبيرة والتواصل السهل. إنه صوت يتحدث
+										إلى زملائه المطورين والعملاء غير
+										التقنيين على قدم المساواة. عند كتابة
+										بهذا النمط ، من المهم استخدام لغة واضحة
+										ومختصرة تنقل الأفكار المعقدة بطريقة
+										بسيطة. استخدم الجرجنة الصناعية بحذر
+										ودائمًا مع شرح لأولئك الذين قد لا يكونون
+										على دراية. كن واثقًا في خبرتك ولكن لا
+										تكن متعالًا. تذكر ، جمهورك يبحث عنك
+										للحصول على إرشاد في مجال قد لا يفهمونه
+										تمامًا. مهمتك هي جعل المعقد يشعر
+										بالبساطة والخوف يشعر بالإدارة
 									</div>
 
 									<div className="w-2/5 flex justify-end flex-wrap items-center border-r border-grey-100 p-3">
-										<div className="truncate">strong</div>
+										<div className="truncate">مطور</div>
 									</div>
 								</div>
 							</div>
@@ -115,7 +123,10 @@ function BrandVoice() {
 			>
 				<div className="w-full md:w-[420px]">
 					{isAnalyze ? (
-						<AnalizeBrandVoice setIsEdit={setIsEdit} setIsAnalyze={setIsAnalyze} />
+						<AnalizeBrandVoice
+							setIsEdit={setIsEdit}
+							setIsAnalyze={setIsAnalyze}
+						/>
 					) : (
 						<BrandVoiceEdit
 							setIsEdit={setIsEdit}

@@ -1,12 +1,22 @@
-import { BuildRounded, ChatRounded, Description, GraphicEqRounded, StorageRounded, TitleRounded } from "@material-ui/icons";
+import {
+	BuildRounded,
+	ChatRounded,
+	Description,
+	GraphicEqRounded,
+	StorageRounded,
+	TitleRounded,
+} from "@material-ui/icons";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import Modal from "@material-ui/core/Modal";
+import Templates from "../Templates";
 
 function SideBar() {
 	const { t } = useTranslation();
 	const navigate = useNavigate();
 	const [activeMenu, setActiveMenu] = useState();
+	const [isTemplate, setIsTemplate] = useState(false);
 	useEffect(() => {
 		let menu = window.location.pathname.split("/")[1];
 		setActiveMenu(menu + "/");
@@ -16,7 +26,9 @@ function SideBar() {
 		{
 			name: t("chat"),
 			to: "/chat",
-			icon: <ChatRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
+			icon: (
+				<ChatRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />
+			),
 		},
 		{
 			name: t("myProjects"),
@@ -28,23 +40,27 @@ function SideBar() {
 		{
 			name: t("infoBase"),
 			to: "/infobase",
-			icon: <StorageRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
+			icon: (
+				<StorageRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />
+			),
 		},
 		{
 			name: t("brandVoice"),
 			to: "/brand-voice",
-			icon: <GraphicEqRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
+			icon: (
+				<GraphicEqRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />
+			),
 		},
-		{
-			name: t("templates"),
-			to: "/templates",
-			icon: <TitleRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
-		},
-		{
-			name: t("tools"),
-			to: "/tools",
-			icon: <BuildRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
-		},
+		// {
+		// 	name: t("templates"),
+		// 	to: "/templates",
+		// 	icon: <TitleRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
+		// },
+		// {
+		// 	name: t("tools"),
+		// 	to: "/tools",
+		// 	icon: <BuildRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
+		// },
 	];
 
 	const handleMenu = (to) => {
@@ -137,6 +153,21 @@ function SideBar() {
 											</div>
 										);
 									})}
+									<div>
+										<button
+											onClick={() => setIsTemplate(true)}
+											className="group focus:outline-none flex justify-end select-none items-center 
+													rounded-lg px-3 font-semibold border-0 focus:ring-purple-500 text-slate-800 hover:text-slate-900 text-md w-full py-3 hover:bg-purple-100 md:text-sm focus:shadow-none text-right"
+										>
+											<h3
+												className="flex-nowrap whitespace-nowrap mr-2 text-h3 font-semibold tracking-wide"
+												aria-label="Chat"
+											>
+												{t("templates")}
+											</h3>
+											<TitleRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -144,6 +175,16 @@ function SideBar() {
 					</div>
 				</div>
 			</div>
+
+			<Modal
+				className="text-center"
+				open={isTemplate}
+				onClose={() => setIsTemplate(false)}
+				aria-labelledby="simple-modal-title"
+				aria-describedby="simple-modal-description"
+			>
+				<Templates onOpen={setIsTemplate} />
+			</Modal>
 		</div>
 	);
 }

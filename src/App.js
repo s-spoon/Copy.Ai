@@ -7,6 +7,8 @@ import store from "./store";
 import Projects from "./pages/Projects";
 import Infobase from "./pages/Infobase";
 import BrandVoice from "./pages/BrandVoice";
+import Login from "./pages/Login";
+import Templates from "./pages/Templates";
 
 function App() {
 	return (
@@ -38,6 +40,17 @@ function App() {
 						path="/brand-voice"
 						element={<BrandVoice />}
 					/>
+					<Route
+						exact
+						path="/login"
+						element={<Login />}
+					/>
+					<Route
+						exact
+						path="/templates"
+						element={<Templates />}
+					/>
+
 					<Route
 						path="*"
 						element={<p>Page Will Be Soon</p>}

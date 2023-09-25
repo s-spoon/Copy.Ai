@@ -62,7 +62,7 @@ const resources = {
       brandVoiceDes: "Create different Brand Voices to use in various instances - ensuring consistency of your AI-generated content.",
       newBrandVoice: "New Brand Voice",
       actions: "Actions",
-      goBack: "goBack",
+      goBack: "Go Back",
       addBrandVoice: "Add Brand Voice",
       addBrandVoiceDes: "Write or paste content that reflects your brand voice. For best results, we recommend between 50-500 words",
       contentAnalize: "Content to Analize",
@@ -77,7 +77,20 @@ const resources = {
       tip2: "For best results, you can redo the analysis instead of editing",
       saveAsDefaultVoice: "Save as the default voice across your workspace",
       redoAnalysis: "Redo Analysis",
-      saveBrandVoice: "Save Brand Voice"
+      saveBrandVoice: "Save Brand Voice",
+      // ------------------------Templates------------------------
+      allTemplates: "All Templates",
+      custom: "Custom",
+      blog: "Blog",
+      socialMediaContent: "Social Media Content",
+      email: "Email",
+      fun: "Fun",
+      websiteCopy: "Website Copy",
+      writingTool: "Writing Tool",
+      generalBusiness: "General Business",
+      caseStudy: "Case Study",
+      video: "Video",
+      new: "New"
     }
   },
   ar: {
@@ -155,7 +168,20 @@ const resources = {
           tip2: "للحصول على أفضل النتائج ، يمكنك إعادة القيام بالتحليل بدلاً من التحرير",
           saveAsDefaultVoice: "احفظ كصوت افتراضي في جميع أنحاء مساحة العمل الخاصة بك",
           redoAnalysis: "إعادة التحليل",
-          saveBrandVoice: "احفظ صوت العلامة التجارية"
+          saveBrandVoice: "احفظ صوت العلامة التجارية",
+          // ------------------------Templates------------------------
+          allTemplates: "جميع القوالب",
+          custom: "مخصص",
+          blog: "مدونة",
+          socialMediaContent: "محتوى وسائل التواصل الاجتماعي",
+          email: "البريد الإلكتروني",
+          fun: "مرح",
+          websiteCopy: "نسخ الموقع",
+          writingTool: "أداة الكتابة",
+          generalBusiness: "أعمال عامة",
+          caseStudy: "دراسة حالة",
+          video: "فيديو",
+          new: "جديد"
     }
   }
 };
