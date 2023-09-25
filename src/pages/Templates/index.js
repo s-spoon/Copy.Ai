@@ -6,7 +6,7 @@ import TemplateCard from "./TemplateCard";
 function Templates({ onOpen = () => {} }) {
 	const { t } = useTranslation();
 	return (
-		<div className="inline-block rounded-lg bg-white align-bottom shadow-xl transform text-left transition-all sm:my-8 sm:align-middle w-11/12 p-6 sm:p-8 sm:max-w-5xl">
+		<div className="inline-block rounded-lg bg-white align-bottom shadow-xl transform text-left transition-all sm:my-8 sm:align-middle w-11/12 p-6 sm:p-8 sm:max-w-5xl overflow-auto">
 			<button
 				onClick={() => onOpen(false)}
 				className="outline-none absolute top-0 left-0 z-10 p-8 ring-0 hover:opacity-70"
