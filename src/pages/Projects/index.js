@@ -13,7 +13,7 @@ function Projects() {
 				<ProjectList />
 			</div>
 
-			<ProjectFooter />
+			{/* <ProjectFooter /> */}
 		</Layout>
 	);
 }

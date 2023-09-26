@@ -575,3 +575,11 @@ input[type="number"] {
 .prompt-container .is-editor-empty {
 	height: auto !important;
 }
+
+[data-simplebar] {
+	direction: rtl;
+}
+
+[data-simplebar] .simplebar-content-wrapper {
+	direction: ltr;
+}

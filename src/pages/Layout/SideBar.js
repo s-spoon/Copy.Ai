@@ -51,11 +51,11 @@ function SideBar() {
 				<GraphicEqRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />
 			),
 		},
-		// {
-		// 	name: t("templates"),
-		// 	to: "/templates",
-		// 	icon: <TitleRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
-		// },
+		{
+			name: t("templates"),
+			to: "/templates",
+			icon: <TitleRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />,
+		},
 		// {
 		// 	name: t("tools"),
 		// 	to: "/tools",
@@ -153,7 +153,7 @@ function SideBar() {
 											</div>
 										);
 									})}
-									<div>
+									{/* <div>
 										<button
 											onClick={() => setIsTemplate(true)}
 											className="group focus:outline-none flex justify-end select-none items-center 
@@ -167,7 +167,7 @@ function SideBar() {
 											</h3>
 											<TitleRounded className="text-slate-600 group-hover:text-slate-700 !h-5 !w-5 !mr-3" />
 										</button>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>
@@ -176,7 +176,7 @@ function SideBar() {
 				</div>
 			</div>
 
-			<Modal
+			{/* <Modal
 				className="text-center"
 				open={isTemplate}
 				onClose={() => setIsTemplate(false)}
@@ -184,7 +184,7 @@ function SideBar() {
 				aria-describedby="simple-modal-description"
 			>
 				<Templates onOpen={setIsTemplate} />
-			</Modal>
+			</Modal> */}
 		</div>
 	);
 }
