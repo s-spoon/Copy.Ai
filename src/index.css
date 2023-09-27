@@ -18,6 +18,15 @@ body {
 		sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
 main {
 	height: 100%;
 }
@@ -574,12 +583,4 @@ input[type="number"] {
 
 .prompt-container .is-editor-empty {
 	height: auto !important;
-}
-
-[data-simplebar] {
-	direction: rtl;
-}
-
-[data-simplebar] .simplebar-content-wrapper {
-	direction: ltr;
 }

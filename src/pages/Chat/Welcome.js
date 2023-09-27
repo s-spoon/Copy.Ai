@@ -19,7 +19,7 @@ function Welcome() {
 								{t("getStarted")}
 							</p>
 						</div>
-						<div className="flex w-full items-center py-2 md:py-5 text-right">
+						{/* <div className="flex w-full items-center py-2 md:py-5 text-right">
 							<div className="w-full md:pr-4">
 								<div className="flex items-center justify-end">
 									<h3 className="mb-1.5 font-medium text-purple-700">
@@ -72,7 +72,7 @@ function Welcome() {
 							<div className="flex h-10 w-11 items-center justify-center rounded-full bg-slate-100">
 								<DocIcon className="h-5 w-5 text-slate-600" />
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

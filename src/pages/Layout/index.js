@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SideBar from "./SideBar";
 import Header from "./Header";
 
-function Layout({children=<></>}) {
+function Layout({ children = <></> }) {
 	const [isMenu, setIsMenu] = useState(false);
 	return (
 		<div className="h-full max-w-full relative flex flex-1 overflow-hidden">
@@ -13,8 +13,10 @@ function Layout({children=<></>}) {
 				/>
 				{children}
 			</div>
-			<div className="md:sticky top-0">
-				<SideBar />
+			<div>
+				<div className="md:sticky">
+					<SideBar />
+				</div>
 			</div>
 			{isMenu && (
 				<div className="overflow-hidden absolute w-full md:hidden !z-100">
