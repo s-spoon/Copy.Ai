@@ -68,7 +68,7 @@ function ChatInput({ setChatList = () => {} }) {
 									class="flex-nowrap whitespace-nowrap ml-2 text-left tracking-wide font-semibold text-h3"
 									aria-label="Attach"
 								>
-									Attach
+									يربط
 								</h3>
 							</button>
 
