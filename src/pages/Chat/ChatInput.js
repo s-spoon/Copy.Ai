@@ -4,6 +4,7 @@ import SendIcon from "../../components/icons/SendIcon";
 import EffectIcon from "../../components/icons/EffectIcon";
 import DocIcon from "../../components/icons/DocIcon";
 import VoiceIcon from "../../components/icons/VoiceIcon";
+import { AttachFileOutlined } from "@material-ui/icons";
 function ChatInput({ setChatList = () => {} }) {
 	const { t, i18n } = useTranslation();
 	const [inputVal, setInputVal] = useState("");
@@ -56,6 +57,19 @@ function ChatInput({ setChatList = () => {} }) {
 						<div className="p-2 bg-gray-50 w-full items-center justify-between rounded-b-xl flex">
 							<button className="group focus:outline-none flex items-center text-xs font-semibold focus:ring-purple-500 hover:bg-purple-800 pointer-events-none bg-slate-200 border-slate-300 text-slate-700 p-2 rounded-full ring-offset-2 focus:ring-2">
 								<SendIcon className="h-3 w-3 text-white transform scale-x-[-1]" />
+							</button>
+							<button
+								aria-label="Attach"
+								tabindex="0"
+								class="group focus:outline-none flex select-none items-center text-xs rounded-lg px-3 py-2 font-semibold border-0 focus:ring-green-500 text-slate-800 hover:bg-slate-200 hover:text-slate-900 focus:shadow-none"
+							>
+								<AttachFileOutlined className="!h-5 !w-5 group-hover:text-slate-700 text-slate-600" />
+								<h3
+									class="flex-nowrap whitespace-nowrap ml-2 text-left tracking-wide font-semibold text-h3"
+									aria-label="Attach"
+								>
+									Attach
+								</h3>
 							</button>
 
 							<div className="flex items-center ml-auto mr-2">
