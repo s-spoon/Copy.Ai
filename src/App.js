@@ -9,6 +9,7 @@ import Infobase from "./pages/Infobase";
 import BrandVoice from "./pages/BrandVoice";
 import Login from "./pages/Login";
 import Templates from "./pages/Templates";
+import Home from "./pages/Home";
 
 function App() {
 	return (
@@ -18,6 +19,11 @@ function App() {
 					<Route
 						exact
 						path="/"
+						element={<Home />}
+					/>
+					<Route
+						exact
+						path="/chat"
 						element={<Chat />}
 					/>
 					<Route
