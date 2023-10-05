@@ -9,6 +9,7 @@ import BorderImage from "./BorderImage";
 import VerticalIntroCard from "./VerticalIntroCard";
 import VideoSection from "./VideoSection";
 import HorizontalIntroCard from "./HorizontalIntroCard";
+import FooterSection from "./FooterSection";
 
 const verticalIntroList = [
 	{
@@ -38,24 +39,28 @@ const HorizontalIntroList = [
 		title: "صوت علامتك التجارية",
 		des: "إن أسلوبك في الكتابة هو ما يجعلك مميزًا وفريدًا عن منافسيك. فإذا كنت تتبع اسلوبًا أو طريقة محددة في الكتابة فبدون أدنى شك أنك ترغب بالكتابة بنفس ذلك الأسلوب الذي تقوم به بصياغة محتواك. باستخدام ذكي يمكنك الأن بالكتابة بنفس أسلوب علامتك التجارية بدون فقدان هويتك.",
 		isImgLeft: true,
+		icon: 'speaker-colored.png',
 		img: "",
 	},
 	{
 		title: "القوالب",
 		des: "يمكنك الوصول إلى الكثير من القوالب التي تسهل عليك تحديد أفكارك في الكتابة. كل ما عليك فعله هو اختيار القالب الذي ترغب بالكتابة عنه وسيقوم ذكي بتوجيهك لتحديد أفكارك وتوجيهه للكتابة بشكل مناسب لضمان حصولك على أفضل النتائج.",
 		isImgLeft: false,
+		icon: 'laptop-colored.png',
 		img: "",
 	},
 	{
 		title: "المشاريع",
 		des: "يمكنك الوصول إلى آخر مشاريعك بضغطة زر واحدة من خلال الشاشة البديهة لحفظ المشاريع وحسب التواريخ التي قمت فيها بحفظ أعمالك.",
 		isImgLeft: true,
+		icon: 'chart-colored.png',
 		img: "",
 	},
 	{
 		title: "محرر النصوص",
 		des: "يمنحك موقعنا ميزة نقل النصوص من دردشة ذكي إلى محرر النصوص بضغطة زر واحدة بدون أن تضطر للخروج من الموقع والذهاب إلى محرر نص خارجي.",
 		isImgLeft: false,
+		icon: 'pen-colored.png',
 		img: "",
 	},
 ];
@@ -132,6 +137,7 @@ function Home() {
 								<HorizontalIntroCard
 									title={item?.title}
 									des={item?.des}
+									icon ={item?.icon}
 									isImgLeft={item?.isImgLeft}
 								/>
 							</div>
@@ -158,6 +164,8 @@ function Home() {
 							</div>
 						</div>
 					</div>
+
+					<FooterSection />
 				</div>
 			</div>
 		</div>
