@@ -18,19 +18,19 @@ function HeaderSection() {
                 <div className="text-right px-7">
                     <p className="text-xl font-bold">كن أحد شركاء ذكي</p>
                     <div className="pr-2">
-                        <p className="pt-6 text-base cursor-pointer">
+                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             التسويق بالعمولة
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">الوظائف</p>
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">الوظائف</p>
                     </div>
                 </div>
                 <div className="text-right px-7">
                     <p className="text-xl font-bold">ابق على اتصال معنا</p>
                     <div className="pr-2">
-                        <p className="pt-6 text-base cursor-pointer">
+                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             مراجعات العملاء
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             تواصل معنا
                         </p>
                     </div>
@@ -49,16 +49,16 @@ function HeaderSection() {
                 <div className="text-right px-7">
                     <p className="text-xl font-bold">حالات الاستخدام</p>
                     <div className="pr-2">
-                        <p className="pt-6 text-base cursor-pointer">
+                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             كتابة المقالات
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             وسائل التواصل الاجتماعي
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             التسويق الإلكتروني
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">الترجمة</p>
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">الترجمة</p>
                     </div>
                 </div>
             </div>
@@ -71,13 +71,13 @@ function HeaderSection() {
                 <div className="text-right px-7 w-1/3">
                     <p className="text-xl font-bold">المقالات المميزة</p>
                     <div className="pr-2">
-                        <p className="pt-6 text-base cursor-pointer">
+                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             عنوان المقالة الاولى
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             عنوان المقالة الثانية
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             عنوان المقالة الثالثة
                         </p>
                     </div>
@@ -85,10 +85,10 @@ function HeaderSection() {
                 <div className="text-right px-7 w-1/3 border-x border-gray-300">
                     <p className="text-xl font-bold">خدمة العملاء</p>
                     <div className="pr-2">
-                        <p className="pt-6 text-base cursor-pointer">
+                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             الدعم الفني
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             مركز المساعدة
                         </p>
                     </div>
@@ -96,8 +96,8 @@ function HeaderSection() {
                 <div className="text-right px-7 w-1/3">
                     <p className="text-xl font-bold">التعليم</p>
                     <div className="pr-2">
-                        <p className="pt-6 text-base cursor-pointer">المدونة</p>
-                        <p className="pt-5 text-base cursor-pointer">الأوامر</p>
+                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">المدونة</p>
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">الأوامر</p>
                     </div>
                 </div>
             </div>
@@ -110,23 +110,23 @@ function HeaderSection() {
                 <div className="text-right px-7 w-1/3">
                     <p className="text-xl font-bold">المقالات المميزة</p>
                     <div className="pr-2">
-                        <p className="pt-6 text-base cursor-pointer">
+                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             عنوان المقالة الاولى
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             عنوان المقالة الثانية
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             عنوان المقالة الثالثة
                         </p>
                     </div>
                 </div>
                 <div className="text-right px-7 w-1/3 border-x border-gray-300">
                     <div className="pr-2">
-                        <p className="pt-6 text-base cursor-pointer">
+                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             المشاريع
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             محرر النصوص
                         </p>
                     </div>
@@ -134,14 +134,14 @@ function HeaderSection() {
                 <div className="text-right px-7 w-1/3">
                     <p className="text-xl font-bold">المنصة والمميزات</p>
                     <div className="pr-2">
-                        <p className="pt-6 text-base cursor-pointer">
+                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             المحادثة
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">الحماية</p>
-                        <p className="pt-5 text-base cursor-pointer">
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">الحماية</p>
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             صوت العلامة التجارية
                         </p>
-                        <p className="pt-5 text-base cursor-pointer">القوالب</p>
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">القوالب</p>
                     </div>
                 </div>
             </div>
