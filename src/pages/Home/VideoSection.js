@@ -4,7 +4,13 @@ import React from "react";
 function VideoSection() {
 	return (
 		<>
-			<div className="w-full md:w-10/12 mx-auto rounded-lg bg-gradient-to-r from-purple-700 via-pink-500 to-pink-600 p-2 md:p-3 lg:p-5">
+			<div className="relative">
+				{/* <div className="absolute -left-[180px] -top-[200px] w-[800px] h-[600px]" style={{ backgroundImage: "radial-gradient(45.56% 43.62% at 44.58% 49.95%, rgba(170, 67, 111, 0.37) 0%, rgba(170, 67, 111, 0.00) 93.13%)" }}></div>
+				<div className="absolute -right-[180px] -top-[200px] w-[600px] h-[600px]" style={{ backgroundImage: "radial-gradient(49.18% 49.19% at 48.68% 50.83%, rgba(119, 33, 214, 0.35) 0%, rgba(119, 33, 214, 0.25) 6.32%, rgba(119, 33, 214, 0.00) 90.68%)" }}></div> */}
+				{/* <div className="absolute -left-[180px] -top-[200px] w-[600px] h-[500px]" style={{ backgroundImage: "radial-gradient(45.56% 43.62% at 44.58% 49.95%, rgba(170, 67, 111, 0.37) 0%, rgba(170, 67, 111, 0.00) 93.13%)" }}></div> */}
+			</div>
+
+			<div className="w-full md:w-10/12 mx-auto rounded-lg bg-gradient-to-r from-purple-700 via-pink-500 to-pink-600 p-2 md:p-3 lg:p-5 z-20">
 				<video
 					className="rounded"
 					width="100%"

@@ -16,8 +16,13 @@ module.exports = {
 			backgroundImage: (theme) => ({
 				"gradient-radial":
 					"linear-gradient(180deg, #F0F3FF 18.49%, rgba(107, 107, 107, 0.00) 58.67%, rgba(0, 0, 0, 0.00) 100%)",
-          'free-service': "url('./assets/imgs/free-service.png')",
+				'free-service': "url('./assets/imgs/free-service.png')",
 			}),
+		},
+		variants: {
+			extend: {
+				display: ['hover', 'focus'],
+			}
 		},
 	},
 	plugins: [],

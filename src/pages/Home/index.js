@@ -68,9 +68,9 @@ const HorizontalIntroList = [
 function Home() {
 	return (
 		<div className="bg-home w-screen">
+			<HeaderSection />
 			<div className="max-w-[1360px] mx-auto px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 py-8 lg:py-12">
 				<div className="pb-10 md:pb-0 md:min-h-screen xl:min-h-full xl:pb-32">
-					<HeaderSection />
 					<HeroSection />
 				</div>
 				<div className="w-full">
