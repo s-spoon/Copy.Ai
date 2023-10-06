@@ -8,10 +8,9 @@ function HorizontalIntroCard({ title = "", des = "", isImgLeft = false, icon="" 
 			}`}
 		>
 			<div
-				// style={{ mixBlendMode: "difference" }}
 				className="md:w-5/12 text-right"
 			>
-				<div className="flex items-center justify-center text-white text-xl lg:text-2xl px-5 py-[10px] w-fit-content mx-auto rounded-[77px] border border-[#672669]">
+				<div className="flex items-center justify-center text-white text-xl lg:text-2xl px-5 py-[10px] w-fit-content ml-auto rounded-[77px] border border-[#672669]">
 					<img className="w-[18px] h-[18px]" src={`./assets/imgs/${icon}`} alt={title} />
 					<p className="ml-1">{title}</p>
 				</div>
