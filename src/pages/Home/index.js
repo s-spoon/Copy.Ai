@@ -99,7 +99,7 @@ function Home() {
                                 بشر. كل ما عليك فعله هو كتابة الأمر الذي تريده
                                 من ذكي وسيأتيك الرد في ثواني.
                             </p>
-                            <div className="mt-4 md:mt-6 lg:mt-[30px] flex items-center justify-end">
+                            <div className="mt-4 md:mt-6 lg:mt-14 flex items-center justify-end">
                                 <OutlinedButton text="المزيد" />
                                 <div className="px-2 lg:px-3" />
                                 <ActionButton
