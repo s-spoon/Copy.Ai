@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LinkButton from "./LinkButton";
-import { KeyboardArrowDown, Menu } from "@material-ui/icons";
+import { KeyboardArrowDown, KeyboardArrowUp, Menu } from "@material-ui/icons";
 import ActionButton from "./ActionButton";
 import { useNavigate } from "react-router-dom";
 
@@ -10,22 +10,30 @@ function HeaderSection() {
 
     const CompanyMenu = () => {
         return (
-            <div className="w-full flex items-start justify-between">
-                <div className="text-center">
-                    <p className="text-xl font-bold">قصص عملائنا</p>
-                    <img src="./assets/imgs/customer.png" alt="customer" />
+            <div className="w-full flex justify-between items-stretch">
+                <div className="text-center pt-6 w-full">
+                    <p className="text-xl font-bold h-1.5 bg-[#f1b8f8] flex items-end w-fit-content mx-auto ">
+                        قصص عملائنا
+                    </p>
+                    <img  className="brightness-100 hover:brightness-50 cursor-pointer duration-150 w-full" src="./assets/imgs/customer.png" alt="customer" />
                 </div>
-                <div className="text-right px-7">
-                    <p className="text-xl font-bold">كن أحد شركاء ذكي</p>
+                <div className="text-right px-7 pt-6 border-x border-gray-300 w-full">
+                    <p className="text-xl font-bold h-1.5 bg-[#f1b8f8] flex items-end w-fit-content ml-auto">
+                        كن أحد شركاء ذكي
+                    </p>
                     <div className="pr-2">
                         <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             التسويق بالعمولة
                         </p>
-                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">الوظائف</p>
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
+                            الوظائف
+                        </p>
                     </div>
                 </div>
-                <div className="text-right px-7">
-                    <p className="text-xl font-bold">ابق على اتصال معنا</p>
+                <div className="text-right px-7 pt-6 w-full">
+                    <p className="text-xl font-bold h-1.5 bg-[#f1b8f8] flex items-end w-fit-content ml-auto">
+                        ابق على اتصال معنا
+                    </p>
                     <div className="pr-2">
                         <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             مراجعات العملاء
@@ -42,12 +50,19 @@ function HeaderSection() {
     const UseCaseMenu = () => {
         return (
             <div className="w-full flex items-start justify-between">
-                <div className="text-center">
-                    <p className="text-xl font-bold">كيف يعمل ذكي</p>
-                    <img src="./assets/imgs/customer.png" alt="customer" />
+                <div className="text-center pt-6 w-full">
+                    <p className="text-xl font-bold h-1.5 bg-[#f1b8f8] flex items-end w-fit-content mx-auto">
+                        كيف يعمل ذكي
+                    </p>
+                    <div className="group relative w-fit-content">
+                        <img className="brightness-100 hover:brightness-50 cursor-pointer duration-150 w-full" src="./assets/imgs/customer.png" alt="customer" />
+                        
+                    </div>
                 </div>
-                <div className="text-right px-7">
-                    <p className="text-xl font-bold">حالات الاستخدام</p>
+                <div className="text-right px-7 pt-6 w-full border-l border-gray-300">
+                    <p className="text-xl font-bold h-1.5 bg-[#f1b8f8] flex items-end w-fit-content ml-auto">
+                        حالات الاستخدام
+                    </p>
                     <div className="pr-2">
                         <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             كتابة المقالات
@@ -58,7 +73,9 @@ function HeaderSection() {
                         <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             التسويق الإلكتروني
                         </p>
-                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">الترجمة</p>
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
+                            الترجمة
+                        </p>
                     </div>
                 </div>
             </div>
@@ -68,8 +85,10 @@ function HeaderSection() {
     const LearnMenu = () => {
         return (
             <div className="w-full flex justify-between items-stretch">
-                <div className="text-right px-7 w-1/3">
-                    <p className="text-xl font-bold">المقالات المميزة</p>
+                <div className="text-right px-7 w-1/3 pt-6">
+                    <p className="text-xl font-bold h-1.5 bg-[#f1b8f8] flex items-end w-fit-content ml-auto">
+                        المقالات المميزة
+                    </p>
                     <div className="pr-2">
                         <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             عنوان المقالة الاولى
@@ -82,8 +101,10 @@ function HeaderSection() {
                         </p>
                     </div>
                 </div>
-                <div className="text-right px-7 w-1/3 border-x border-gray-300">
-                    <p className="text-xl font-bold">خدمة العملاء</p>
+                <div className="text-right px-7 w-1/3 border-x border-gray-300 pt-6">
+                    <p className="text-xl font-bold h-1.5 bg-[#f1b8f8] flex items-end w-fit-content ml-auto">
+                        خدمة العملاء
+                    </p>
                     <div className="pr-2">
                         <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             الدعم الفني
@@ -93,11 +114,17 @@ function HeaderSection() {
                         </p>
                     </div>
                 </div>
-                <div className="text-right px-7 w-1/3">
-                    <p className="text-xl font-bold">التعليم</p>
+                <div className="text-right px-7 w-1/3 pt-6">
+                    <p className="text-xl font-bold h-1.5 bg-[#f1b8f8] flex items-end w-fit-content ml-auto">
+                        التعليم
+                    </p>
                     <div className="pr-2">
-                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">المدونة</p>
-                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">الأوامر</p>
+                        <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
+                            المدونة
+                        </p>
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
+                            الأوامر
+                        </p>
                     </div>
                 </div>
             </div>
@@ -107,8 +134,10 @@ function HeaderSection() {
     const ProductMenu = () => {
         return (
             <div className="w-full flex justify-between items-stretch">
-                <div className="text-right px-7 w-1/3">
-                    <p className="text-xl font-bold">المقالات المميزة</p>
+                <div className="text-right px-7 w-1/3 pt-6">
+                    <p className="text-xl font-bold h-1.5 bg-[#f1b8f8] flex items-end w-fit-content ml-auto">
+                        المقالات المميزة
+                    </p>
                     <div className="pr-2">
                         <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             عنوان المقالة الاولى
@@ -121,7 +150,7 @@ function HeaderSection() {
                         </p>
                     </div>
                 </div>
-                <div className="text-right px-7 w-1/3 border-x border-gray-300">
+                <div className="text-right px-7 w-1/3 border-x border-gray-300 pt-8">
                     <div className="pr-2">
                         <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             المشاريع
@@ -131,17 +160,23 @@ function HeaderSection() {
                         </p>
                     </div>
                 </div>
-                <div className="text-right px-7 w-1/3">
-                    <p className="text-xl font-bold">المنصة والمميزات</p>
+                <div className="text-right px-7 w-1/3 pt-6">
+                    <p className="text-xl font-bold h-1.5 bg-[#f1b8f8] flex items-end w-fit-content ml-auto">
+                        المنصة والمميزات
+                    </p>
                     <div className="pr-2">
                         <p className="mt-6 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             المحادثة
                         </p>
-                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">الحماية</p>
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
+                            الحماية
+                        </p>
                         <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
                             صوت العلامة التجارية
                         </p>
-                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">القوالب</p>
+                        <p className="mt-5 px-2 py-1 text-base cursor-pointer hover:bg-gray-300 rounded-md">
+                            القوالب
+                        </p>
                     </div>
                 </div>
             </div>
@@ -174,7 +209,11 @@ function HeaderSection() {
                                         setActiveMenu("company")
                                     }
                                 >
-                                    <KeyboardArrowDown />
+                                    {activeMenu === "company" ? (
+                                        <KeyboardArrowUp />
+                                    ) : (
+                                        <KeyboardArrowDown />
+                                    )}
                                     <span>الشركة</span>
                                 </div>
                             }
@@ -184,7 +223,11 @@ function HeaderSection() {
                                 <div
                                     onMouseEnter={() => setActiveMenu("learn")}
                                 >
-                                    <KeyboardArrowDown />
+                                    {activeMenu === "learn" ? (
+                                        <KeyboardArrowUp />
+                                    ) : (
+                                        <KeyboardArrowDown />
+                                    )}
                                     <span>تعلم</span>
                                 </div>
                             }
@@ -196,7 +239,11 @@ function HeaderSection() {
                                         setActiveMenu("usecase")
                                     }
                                 >
-                                    <KeyboardArrowDown />
+                                    {activeMenu === "usecase" ? (
+                                        <KeyboardArrowUp />
+                                    ) : (
+                                        <KeyboardArrowDown />
+                                    )}
                                     <span>حالات الاستخدام</span>
                                 </div>
                             }
@@ -208,7 +255,11 @@ function HeaderSection() {
                                         setActiveMenu("product")
                                     }
                                 >
-                                    <KeyboardArrowDown />
+                                    {activeMenu === "product" ? (
+                                        <KeyboardArrowUp />
+                                    ) : (
+                                        <KeyboardArrowDown />
+                                    )}
                                     <span>المنتجات</span>
                                 </div>
                             }

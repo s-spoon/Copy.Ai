@@ -26,11 +26,13 @@ const verticalIntroList = [
         title: "كتابة وصف المنتج",
         des: "إن وصف المنتج من أكثر الأشياء التي يتكاسل الكثيرون في الكتابة عنها فيقومون بنسخ المحتويات الموجودة على المواقع الأخرى ويغفلون عن أهميتها. ولكن مع ذكي يمكنك إنشاء أوصافًا مقنعة لمنتجاتك، لاستخدامها على المواقع ووسائل التواصل الاجتماعي ورسائل البريد الإلكتروني.",
         act: "اكتب وصف لمنتجك",
+        text: "white"
     },
     {
         title: "كتابة نسخة إعلانية",
         des: "باعتبار ذكي أداة كتابة مدعومة بالذكاء الاصطناعي فقد تم تدريبه على كتابة نسخة إعلانية مقنعة وجذابة لجمهورك المستهدف في وقت قياسي. حيث يمكنه كتابة نسخة أعلانية للفيس بوك وجوجل وتويتر والكثير.",
         act: "اكتب نسخة إعلانية",
+        text: "white"
     },
 ];
 
@@ -125,6 +127,7 @@ function Home() {
                                     title={item?.title}
                                     des={item?.des}
                                     act={item?.act}
+                                    text={item?.text}
                                 />
                             </div>
                         );
@@ -158,7 +161,7 @@ function Home() {
                         );
                     })}
 
-                    <div className="bg-no-repeat bg-cover bg-free-service flex items-center justify-center rounded-[32px] h-80 mb-16 lg:mb-20">
+                    <div className="bg-no-repeat bg-cover bg-free-service flex items-center justify-center rounded-[32px] h-80 mb-16 lg:mb-20 bg-white">
                         <div className="w-fit-content text-center text-white">
                             <p className="text-3xl md:text-4xl lg:text-[40px]">
                                 ابدأ باستخدام ذكي مجانا
