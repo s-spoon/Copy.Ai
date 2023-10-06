@@ -1,6 +1,6 @@
 function BorderImage({ img = "" }) {
 	return (
-        <div class="rounded-lg bg-gradient-to-r from-pink-300 via-purple-500 to-pink-400 p-[10px]">
+        <div class="rounded-lg bg-gradient-to-r from-[#FCA2FF] via-[#D84BDD] to-[#FB88FF] p-[20px]">
             <img src={img} className="w-full rounded" />
         </div>
 	);
